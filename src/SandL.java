@@ -34,11 +34,14 @@ public class SandL {
 					System.out.println();
 				}
 				if(i!=0) {
+					if(x!=0){
 					System.out.print(x * i + "\t");
+					}
 				}
 			}
 		}
-	}
+        System.out.println();
+    }
 	public static void printThemTickets(){
 		boolean x = true;
 		while(x==true) {

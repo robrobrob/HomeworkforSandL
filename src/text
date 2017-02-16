@@ -1,14 +1,13 @@
 import java.util.Scanner;
-
 /**
- * @author: Robert
- * @version: 2/16/17
- * @assign.ment: Strings and Loops
- * @descrip.tion: Exercises in Strings and Loops
+ * Write a description of class SandL here.
  *
+ * @author (your name)
+ * @version (a version number or a date)
  */
-public class SandL {
-	public static void main(String[] args) {
+public class SandL
+{
+    public static void main(String[] args) {
 		boringLoop();
 		boringLoop2();
 		multTable();
@@ -43,17 +42,16 @@ public class SandL {
 		boolean x = true;
 		while(x==true) {
 			System.out.println("Print Tickets Started");
-			System.out.println("Enter number of tickets");
-			Scanner scannerTickNum = new Scanner(System.in);
-			int tickNum = scannerTickNum.nextInt();
-			System.out.println("Enter Last Name");
-			Scanner scannerLastName = new Scanner(System.in);
-			String lastName = scannerLastName.nextLine();
-			System.out.println("Enter starting number");
-			Scanner scannerStartNum = new Scanner(System.in);
-			int startNum = scannerStartNum.nextInt();
+			System.out.println("Enter number of tickets:");
+			Scanner scanner = new Scanner(System.in);
+			int tickNum = scanner.nextInt();
+			String dump = scanner.nextLine();
+			System.out.println("Enter last name:");
+			String lastName = scanner.nextLine();
+			System.out.println("Enter starting number:");
+			int startNum = scanner.nextInt();
+			dump = scanner.nextLine();
 			System.out.println("Ticket Printout Starting");
-			scannerLastName.reset();
 			int i = 0;
 			String eventName = "Brian Arnold's Rockin' Synth Jams";
 			for (;i<tickNum;i++){
@@ -61,14 +59,13 @@ public class SandL {
 				System.out.println("Ticket: "+lastName.substring(0,4)+", "+currentTickNum+", "+eventName);
 			}
 			System.out.println("Do you wish to Continue? Y or N");
-			String throwAway = scannerStartNum.nextLine();
-			Scanner scannercontinue = new Scanner(System.in);
-			String choice = scannercontinue.nextLine();
+			String choice = scanner.nextLine();
+			scanner.reset();
 			if (choice.equals("Y")){
 				x = true;
 			}
 			if (choice.equals("N")){
-				System.out.println("Ending");
+			    System.out.println("Ending");
 				x = false;
 			}
 			if(!(choice.equals("N")||choice.equals("Y"))) {

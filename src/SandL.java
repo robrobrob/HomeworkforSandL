@@ -41,7 +41,7 @@ public class SandL {
 	}
 	public static void printThemTickets(){
 		boolean x = true;
-		while(x=true) {
+		while(x==true) {
 			System.out.println("Print Tickets Started");
 			System.out.println("Enter number of tickets");
 			Scanner scannerTickNum = new Scanner(System.in);
@@ -60,6 +60,7 @@ public class SandL {
 				System.out.println("Ticket: "+lastName.substring(0,4)+", "+currentTickNum+", "+eventName);
 			}
 			System.out.println("Do you wish to Continue? Y or N");
+			String throwAway = scannerStartNum.nextLine();
 			Scanner scannercontinue = new Scanner(System.in);
 			String choice = scannercontinue.nextLine();
 			if (choice.equals("Y")){

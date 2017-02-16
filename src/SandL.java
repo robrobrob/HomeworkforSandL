@@ -67,6 +67,7 @@ public class SandL {
 				x = true;
 			}
 			if (choice.equals("N")){
+				System.out.println("Eding");
 				x = false;
 			}
 			if(!(choice.equals("N")||choice.equals("Y"))) {

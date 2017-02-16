@@ -9,9 +9,9 @@ import java.util.Scanner;
  */
 public class SandL {
 	public static void main(String[] args) {
-		//boringLoop();
-		//boringLoop2();
-		//multTable();
+		boringLoop();
+		boringLoop2();
+		multTable();
 		printThemTickets();
 	}
 	public static void boringLoop(){
